@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f0f1b;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    color: #00ffff;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .card {
+    background: linear-gradient(#141426, #090914);
+    padding: 2rem;
+    border: 2px solid #00ffff;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 20px #00ffff80;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .back {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ff0080;
+  }
+  
+  .name {
+    font-size: 2rem;
+  }
+  
+  .image {
+    width: 200px;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+  }
+  
+  .types {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .type {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid #00ffff;
+    background: #000;
+  }
+  
+  .type.normal { background-color: #aaa; color: #000; }
+  .type.fairy { background-color: #fceaff; color: #000; }
+  /* Add more type colors if you want */
+  
+  .section {
+    margin-top: 1rem;
+  }
+  
+  .statRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .statBar {
+    flex: 1;
+    background: #222;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .statFill {
+    height: 100%;
+    background: #00ffff;
+  }
+  
