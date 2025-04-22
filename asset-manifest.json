@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CyberPunk-Poke-Dex/static/css/main.93db1baa.css",
+    "main.js": "/CyberPunk-Poke-Dex/static/js/main.e2370b0e.js",
+    "index.html": "/CyberPunk-Poke-Dex/index.html",
+    "main.93db1baa.css.map": "/CyberPunk-Poke-Dex/static/css/main.93db1baa.css.map",
+    "main.e2370b0e.js.map": "/CyberPunk-Poke-Dex/static/js/main.e2370b0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93db1baa.css",
+    "static/js/main.e2370b0e.js"
+  ]
+}
