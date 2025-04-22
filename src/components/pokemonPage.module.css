@@ -1,4 +1,4 @@
-.container {
+/* .container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,6 @@
   
   .type.normal { background-color: #aaa; color: #000; }
   .type.fairy { background-color: #fceaff; color: #000; }
-  /* Add more type colors if you want */
   
   .section {
     margin-top: 1rem;
@@ -86,4 +85,167 @@
     height: 100%;
     background: #00ffff;
   }
-  
+   */
+
+
+   @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a0a1f;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.card {
+  background: radial-gradient(ellipse at top left, #141426, #0a0a1f);
+  padding: 2rem;
+  border: 2px solid #00ffff;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow:
+    0 0 12px #00ffff44,
+    0 0 24px #00ffff22 inset;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.back {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ff00aa;
+  transition: transform 0.2s ease;
+}
+
+.back:hover {
+  transform: scale(1.3);
+  color: #ff66cc;
+}
+
+.name {
+  font-size: 2rem;
+  color: #00ffff;
+  text-shadow: 0 0 6px #00ffff88;
+}
+
+.image {
+  width: 200px;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  filter: drop-shadow(0 0 12px rgba(0, 255, 255, 0.3));
+}
+
+.types {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.type {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  border: 2px solid;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px currentColor;
+}
+
+.type.normal    { border-color: #AAAA99; box-shadow: 0 0 6px #AAAA99; }
+.type.fire      { border-color: #FF5733; box-shadow: 0 0 6px #FF5733; }
+.type.water     { border-color: #0099FF; box-shadow: 0 0 6px #0099FF; }
+.type.electric  { border-color: #FFD700; box-shadow: 0 0 6px #FFD700; }
+.type.grass     { border-color: #00FF99; box-shadow: 0 0 6px #00FF99; }
+.type.ice       { border-color: #66FFFF; box-shadow: 0 0 6px #66FFFF; }
+.type.fighting  { border-color: #FF3366; box-shadow: 0 0 6px #FF3366; }
+.type.poison    { border-color: #C065D1; box-shadow: 0 0 6px #C065D1; }
+.type.ground    { border-color: #D6A35D; box-shadow: 0 0 6px #D6A35D; }
+.type.flying    { border-color: #7EC8E3; box-shadow: 0 0 6px #7EC8E3; }
+.type.psychic   { border-color: #FF69B4; box-shadow: 0 0 6px #FF69B4; }
+.type.bug       { border-color: #AFFF33; box-shadow: 0 0 6px #AFFF33; }
+.type.rock      { border-color: #C2B280; box-shadow: 0 0 6px #C2B280; }
+.type.ghost     { border-color: #6A5ACD; box-shadow: 0 0 6px #6A5ACD; }
+.type.dragon    { border-color: #8A2BE2; box-shadow: 0 0 6px #8A2BE2; }
+.type.dark      { border-color: #4B0082; box-shadow: 0 0 6px #4B0082; }
+.type.steel     { border-color: #CCCCCC; box-shadow: 0 0 6px #CCCCCC; }
+.type.fairy     { border-color: #FFB6C1; box-shadow: 0 0 6px #FFB6C1; }
+
+.section {
+  margin-top: 1.5rem;
+  border-top: 1px solid #00ffff44;
+  padding-top: 1rem;
+}
+
+.section h3 {
+  font-size: 1rem;
+  color: #00ffff;
+  text-shadow: 0 0 4px #00ffff;
+  margin-bottom: 0.5rem;
+}
+
+.section p, .section li {
+  font-size: 0.9rem;
+  color: #ffffffcc;
+  margin: 0.3rem 0;
+}
+
+.abilitiesBlock, .movesBlock {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #00ffff66;
+  box-shadow: inset 0 0 8px #00ffff22;
+  margin-top: 0.5rem;
+}
+
+.statRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.statBar {
+  flex: 1;
+  background: #1f1f2e;
+  height: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: inset 0 0 4px #000;
+}
+
+.statFill {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffff, #0077ff);
+  box-shadow: 0 0 4px #00ffffaa;
+}
+
+.evoPlaceholder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.evoIcon {
+  font-size: 2rem;
+  color: #ffffff44;
+  filter: drop-shadow(0 0 5px #00ffff44);
+}

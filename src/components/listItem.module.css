@@ -1,4 +1,96 @@
-
-.ListItem {
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .ListItem {
+    width: 90%;
+    max-width: 350px;
     display: flex;
-}
+    justify-content: space-between;
+    align-items: center;
+    background: #0d1025;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 0 10px #00ffff44;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+    /* 🔁 Fade-in animation on scroll */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: var(--delay, 0s);
+  }
+  
+  .ListItem:hover {
+    transform: scale(1.03);
+    box-shadow:
+      0 0 12px #0ff,
+      0 0 24px #00ffffaa,
+      inset 0 0 8px #00ffff66;
+    border-color: #0ff;
+  }
+  
+  .image img {
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.4));
+  }
+  
+  .info h3 {
+    margin: 0;
+    text-transform: capitalize;
+    color: #00ffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .types {
+    margin-top: 11px;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  
+  .type {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin-right: 6px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid;
+    box-shadow: 0 0 6px rgba(0, 255, 255, 0.2);
+  }
+  
+  /* 💡 Neon-glow borders per type (cyberpunkified) */
+  .normal    { border-color: #AAAA99; box-shadow: 0 0 6px #AAAA99; }
+  .fire      { border-color: #FF5733; box-shadow: 0 0 6px #FF5733; }
+  .water     { border-color: #0099FF; box-shadow: 0 0 6px #0099FF; }
+  .electric  { border-color: #FFD700; box-shadow: 0 0 6px #FFD700; }
+  .grass     { border-color: #00FF99; box-shadow: 0 0 6px #00FF99; }
+  .ice       { border-color: #66FFFF; box-shadow: 0 0 6px #66FFFF; }
+  .fighting  { border-color: #FF3366; box-shadow: 0 0 6px #FF3366; }
+  .poison    { border-color: #C065D1; box-shadow: 0 0 6px #C065D1; }
+  .ground    { border-color: #D6A35D; box-shadow: 0 0 6px #D6A35D; }
+  .flying    { border-color: #7EC8E3; box-shadow: 0 0 6px #7EC8E3; }
+  .psychic   { border-color: #FF69B4; box-shadow: 0 0 6px #FF69B4; }
+  .bug       { border-color: #AFFF33; box-shadow: 0 0 6px #AFFF33; }
+  .rock      { border-color: #C2B280; box-shadow: 0 0 6px #C2B280; }
+  .ghost     { border-color: #6A5ACD; box-shadow: 0 0 6px #6A5ACD; }
+  .dragon    { border-color: #8A2BE2; box-shadow: 0 0 6px #8A2BE2; }
+  .dark      { border-color: #4B0082; box-shadow: 0 0 6px #4B0082; }
+  .steel     { border-color: #CCCCCC; box-shadow: 0 0 6px #CCCCCC; }
+  .fairy     { border-color: #FFB6C1; box-shadow: 0 0 6px #FFB6C1; }
+  

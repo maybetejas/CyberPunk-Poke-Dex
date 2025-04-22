@@ -10,13 +10,19 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
+  color: white;
+  background-color: #06061a;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0;
 }
 
 main {
   width: 97vw;
   height: auto;
   min-height: 99vh;
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +37,6 @@ main {
     width: 65vw;
     height: auto;
     min-height: 99vh;
-    border: 2px solid black;
   }
 }
 
@@ -42,7 +47,6 @@ main {
     width: 50vw;
     height: auto;
     min-height: 99vh;
-    border: 2px solid black;
   }
   
 }
